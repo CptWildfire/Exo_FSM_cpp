@@ -39,6 +39,9 @@
     <ClCompile Include="FSM_Agent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FSM_AgentStateIdle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FSM_Transition.h">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="FSM_Agent.h">
       <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM_AgentStateIdle.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

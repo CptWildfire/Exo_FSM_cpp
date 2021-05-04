@@ -1,5 +1,7 @@
 #pragma once
-#include "FSM_StateMachine.h"
+
+class FSM_State;
+class FSM_StateMachine;
 
 class FSM_Transition
 {

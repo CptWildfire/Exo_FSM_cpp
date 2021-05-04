@@ -1,4 +1,5 @@
 #include "FSM_Transition.h"
+#include "FSM_State.h"
 
 FSM_Transition::FSM_Transition()
 {

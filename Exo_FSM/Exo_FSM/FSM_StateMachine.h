@@ -1,5 +1,4 @@
 #pragma once
-#include "FSM_Agent.h"
 #include "FSM_State.h"
 
 class FSM_Agent;
