@@ -7,6 +7,7 @@ private:
 	FSM_StateMachine* fsm;
 public:
 	FSM_Agent();
+	void Update();
 	~FSM_Agent();
 };
 

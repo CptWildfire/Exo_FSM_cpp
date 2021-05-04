@@ -41,6 +41,11 @@ bool FSM_State::GetIsEnter()
 	return isEnter;
 }
 
+std::string FSM_State::DebugFSM()
+{
+	return std::string("FSM - State");
+}
+
 bool FSM_State::CanExit()
 {
 	for (int i = 0; i < allTrans.size(); ++i)

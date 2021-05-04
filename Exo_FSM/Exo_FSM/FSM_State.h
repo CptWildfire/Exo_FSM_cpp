@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include <vector>
 #include "FSM_Transition.h"
 
@@ -25,6 +26,7 @@ public:
 	
 	bool GetIsFinish();
 	bool GetIsEnter();
+	virtual std::string DebugFSM();
 
 protected:
 	virtual bool CanExit();
