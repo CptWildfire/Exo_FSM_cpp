@@ -140,6 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Exo_FSM.cpp" />
+    <ClCompile Include="FSM_Agent.cpp" />
+    <ClCompile Include="FSM_State.cpp" />
+    <ClCompile Include="FSM_StateMachine.cpp" />
+    <ClCompile Include="FSM_Transition.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FSM_Agent.h" />
+    <ClInclude Include="FSM_State.h" />
+    <ClInclude Include="FSM_StateMachine.h" />
+    <ClInclude Include="FSM_Transition.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
