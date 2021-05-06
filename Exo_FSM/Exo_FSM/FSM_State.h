@@ -18,7 +18,8 @@ protected:
 public:
 	FSM_State();
 	FSM_State(FSM_StateMachine* _fsm);
-	
+
+	virtual void Init();
 	virtual bool CanEnter();
 	virtual void Enter();
 	virtual void Run();

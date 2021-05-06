@@ -5,8 +5,12 @@ class FSM_Agent;
 class FSM_StateMachine
 {
 private:
+	bool active = false;
+	bool debug = false;
 	FSM_Agent* agent;
 	FSM_State* currentState;
+
+	void DebugFSM();
 
 public:
 	FSM_StateMachine();

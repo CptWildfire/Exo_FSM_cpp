@@ -13,50 +13,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\FSM">
-      <UniqueIdentifier>{de20b9a4-5b6b-4b7b-bd4d-a7cb2304f140}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\States">
+    <Filter Include="Header Files\States_h">
       <UniqueIdentifier>{81111dd6-6858-455f-8f4c-59166bae8777}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Transition">
+    <Filter Include="Header Files\Transition_h">
       <UniqueIdentifier>{caecd43c-1903-4aef-89a3-a4ed6e2d49d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\States_cpp">
+      <UniqueIdentifier>{a9f5dba0-cd45-4d96-bd87-4da5852ae519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transition_cpp">
+      <UniqueIdentifier>{6f110ed6-4502-40fb-895b-502ff5aeb160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FSM_h">
+      <UniqueIdentifier>{de20b9a4-5b6b-4b7b-bd4d-a7cb2304f140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FSM_cpp">
+      <UniqueIdentifier>{9956d042-3e3b-48c6-a136-bab2ae1ad6f8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exo_FSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FSM_StateMachine.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="FSM_Agent.cpp">
+      <Filter>Source Files\FSM_cpp</Filter>
     </ClCompile>
     <ClCompile Include="FSM_State.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\FSM_cpp</Filter>
     </ClCompile>
     <ClCompile Include="FSM_Transition.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FSM_Agent.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\FSM_cpp</Filter>
     </ClCompile>
     <ClCompile Include="FSM_AgentStateIdle.cpp">
+      <Filter>Source Files\States_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM_StateMachine.cpp">
+      <Filter>Source Files\FSM_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM_AgentTransIdle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FSM_Transition.h">
-      <Filter>Header Files\FSM</Filter>
+      <Filter>Header Files\FSM_h</Filter>
     </ClInclude>
     <ClInclude Include="FSM_StateMachine.h">
-      <Filter>Header Files\FSM</Filter>
+      <Filter>Header Files\FSM_h</Filter>
     </ClInclude>
     <ClInclude Include="FSM_State.h">
-      <Filter>Header Files\FSM</Filter>
+      <Filter>Header Files\FSM_h</Filter>
     </ClInclude>
     <ClInclude Include="FSM_Agent.h">
-      <Filter>Header Files\FSM</Filter>
+      <Filter>Header Files\FSM_h</Filter>
     </ClInclude>
     <ClInclude Include="FSM_AgentStateIdle.h">
+      <Filter>Header Files\States_h</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM_AgentTransIdle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,11 +4,17 @@
 
 FSM_State::FSM_State()
 {
+	
 }
 
 FSM_State::FSM_State(FSM_StateMachine* _fsm)
 {
 	fsm = _fsm;
+}
+
+void FSM_State::Init()
+{
+	
 }
 
 bool FSM_State::CanEnter()

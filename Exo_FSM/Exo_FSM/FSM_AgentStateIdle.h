@@ -14,5 +14,6 @@ protected:
 	bool CanExit() override;
 public:
 	std::string DebugFSM() override;
+	void Init() override;
 };
 

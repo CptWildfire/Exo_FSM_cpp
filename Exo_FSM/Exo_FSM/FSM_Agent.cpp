@@ -11,7 +11,7 @@ FSM_Agent::FSM_Agent()
 
 void FSM_Agent::Update()
 {
-std:std::cout << "update()" << std::endl;
+	fsm->Run();
 }
 
 FSM_Agent::~FSM_Agent()

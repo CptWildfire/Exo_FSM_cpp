@@ -5,13 +5,13 @@ class FSM_StateMachine;
 
 class FSM_Transition
 {
-private:
+protected:
 	FSM_StateMachine* fsm;
 	FSM_State* nextState;
 public:
 	FSM_Transition();
 	FSM_Transition(FSM_State* _state, FSM_StateMachine* _fsm);
-	bool CanTransit();
+	virtual bool CanTransit();
 	FSM_State* GetNextState();
 };
 

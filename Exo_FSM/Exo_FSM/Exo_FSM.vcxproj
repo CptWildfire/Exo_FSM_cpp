@@ -142,6 +142,7 @@
     <ClCompile Include="Exo_FSM.cpp" />
     <ClCompile Include="FSM_Agent.cpp" />
     <ClCompile Include="FSM_AgentStateIdle.cpp" />
+    <ClCompile Include="FSM_AgentTransIdle.cpp" />
     <ClCompile Include="FSM_State.cpp" />
     <ClCompile Include="FSM_StateMachine.cpp" />
     <ClCompile Include="FSM_Transition.cpp" />
@@ -149,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="FSM_Agent.h" />
     <ClInclude Include="FSM_AgentStateIdle.h" />
+    <ClInclude Include="FSM_AgentTransIdle.h" />
     <ClInclude Include="FSM_State.h" />
     <ClInclude Include="FSM_StateMachine.h" />
     <ClInclude Include="FSM_Transition.h" />
