@@ -1,10 +1,17 @@
 #include "FSM_State.h"
-
 #include "FSM_StateMachine.h"
 
 FSM_State::FSM_State()
 {
 	
+}
+
+FSM_State::~FSM_State()
+{
+	for (int i = 0; i < allTrans.size(); ++i)
+	{
+		delete(allTrans[i]);
+	}
 }
 
 FSM_State::FSM_State(FSM_StateMachine* _fsm)

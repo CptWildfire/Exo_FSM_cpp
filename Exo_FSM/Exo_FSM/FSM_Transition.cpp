@@ -5,6 +5,11 @@ FSM_Transition::FSM_Transition()
 {
 }
 
+FSM_Transition::~FSM_Transition()
+{
+	if(nextState == fsm->)
+}
+
 FSM_Transition::FSM_Transition(FSM_State* _state, FSM_StateMachine* _fsm)
 {
 	nextState = _state;

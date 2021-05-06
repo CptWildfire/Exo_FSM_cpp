@@ -1,4 +1,5 @@
 #include "FSM_AgentStateIdle.h"
+#include "FSM_AgentStateMove.h"
 #include "FSM_AgentTransIdle.h"
 
 FSM_AgentStateIdle::FSM_AgentStateIdle(FSM_StateMachine* _fsm) :FSM_State(_fsm) {}
@@ -35,5 +36,5 @@ std::string FSM_AgentStateIdle::DebugFSM()
 
 void FSM_AgentStateIdle::Init()
 {
-	allTrans.push_back(new FSM_AgentTransIdle(new FSM_AgentStateIdle(fsm), fsm));
+	allTrans.push_back(new FSM_AgentTransIdle(new FSM_AgentStateMove(fsm), fsm));
 }

@@ -38,3 +38,8 @@ void FSM_StateMachine::SwitchNextSate(FSM_State* _nextState)
 	delete(currentState);
 	currentState = _nextState;
 }
+
+FSM_State* FSM_StateMachine::GetCurrentState()
+{
+	return currentState;
+}

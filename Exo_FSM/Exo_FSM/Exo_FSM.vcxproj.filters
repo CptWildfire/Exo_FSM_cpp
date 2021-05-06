@@ -52,6 +52,9 @@
       <Filter>Source Files\FSM_cpp</Filter>
     </ClCompile>
     <ClCompile Include="FSM_AgentTransIdle.cpp">
+      <Filter>Source Files\Transition_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM_AgentStateMove.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -72,6 +75,9 @@
       <Filter>Header Files\States_h</Filter>
     </ClInclude>
     <ClInclude Include="FSM_AgentTransIdle.h">
+      <Filter>Header Files\Transition_h</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM_AgentStateMove.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
