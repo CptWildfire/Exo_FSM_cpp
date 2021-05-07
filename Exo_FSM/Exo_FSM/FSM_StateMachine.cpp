@@ -37,7 +37,7 @@ void FSM_StateMachine::SwitchNextSate(FSM_State* _nextState)
 {
 	if(!currentState)return;
 	
-	delete(currentState);
+	//delete(currentState);
 	currentState = _nextState;
 }
 
