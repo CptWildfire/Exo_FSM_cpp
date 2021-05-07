@@ -3,6 +3,8 @@
 
 FSM_AgentTransIdle::FSM_AgentTransIdle(FSM_State* _state, FSM_StateMachine* _fsm) : FSM_Transition(_state, _fsm){}
 
+FSM_AgentTransIdle::~FSM_AgentTransIdle(){}
+
 bool FSM_AgentTransIdle::CanTransit()
 {
 	return nextState->CanEnter();

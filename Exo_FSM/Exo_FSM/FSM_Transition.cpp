@@ -1,5 +1,6 @@
 #include "FSM_Transition.h"
 #include "FSM_State.h"
+#include "FSM_StateMachine.h"
 
 FSM_Transition::FSM_Transition()
 {
@@ -7,7 +8,7 @@ FSM_Transition::FSM_Transition()
 
 FSM_Transition::~FSM_Transition()
 {
-	if(nextState == fsm->)
+	if (nextState != fsm->GetCurrentState())delete(nextState);
 }
 
 FSM_Transition::FSM_Transition(FSM_State* _state, FSM_StateMachine* _fsm)

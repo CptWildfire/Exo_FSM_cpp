@@ -10,8 +10,8 @@ protected:
 	FSM_State* nextState;
 public:
 	FSM_Transition();
-	~FSM_Transition();
 	FSM_Transition(FSM_State* _state, FSM_StateMachine* _fsm);
+	virtual ~FSM_Transition();
 	virtual bool CanTransit();
 	FSM_State* GetNextState();
 };
