@@ -6,7 +6,8 @@
 
 FSM_Agent::FSM_Agent()
 {
-	fsm = new FSM_StateMachine(this, new FSM_AgentStateIdle(fsm));
+	fsm = new FSM_StateMachine(this);
+	fsm->Init(new FSM_AgentStateIdle(fsm));
 }
 
 void FSM_Agent::Update()

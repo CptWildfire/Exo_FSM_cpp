@@ -10,14 +10,17 @@ void FSM_StateMachine::DebugFSM()
 
 FSM_StateMachine::FSM_StateMachine() {}
 
-FSM_StateMachine::FSM_StateMachine(FSM_Agent* _agent, FSM_State* _defaultState)
+FSM_StateMachine::FSM_StateMachine(FSM_Agent* _agent)
 {
 	agent = _agent;
+	debug = true;
+}
+
+void FSM_StateMachine::Init(FSM_State* _defaultState)
+{
 	currentState = _defaultState;
 	currentState->Init();
-
 	active = true;
-	debug = true;
 }
 
 void FSM_StateMachine::Run()
@@ -37,8 +40,10 @@ void FSM_StateMachine::SwitchNextSate(FSM_State* _nextState)
 {
 	if(!currentState)return;
 	
-	//delete(currentState);
+	FSM_State* _oldState = currentState;
 	currentState = _nextState;
+	currentState->Init();
+	delete(_oldState);
 }
 
 FSM_State* FSM_StateMachine::GetCurrentState()

@@ -14,7 +14,8 @@ private:
 
 public:
 	FSM_StateMachine();
-	FSM_StateMachine(FSM_Agent* _agent, FSM_State* _defaultState);
+	FSM_StateMachine(FSM_Agent* _agent);
+	void Init(FSM_State* _defaultState);
 	void Run();
 	void SwitchNextSate(FSM_State* _nextState);
 	FSM_State* GetCurrentState();

@@ -55,7 +55,7 @@
       <Filter>Source Files\Transition_cpp</Filter>
     </ClCompile>
     <ClCompile Include="FSM_AgentStateMove.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\States_cpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +78,7 @@
       <Filter>Header Files\Transition_h</Filter>
     </ClInclude>
     <ClInclude Include="FSM_AgentStateMove.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\States_h</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
