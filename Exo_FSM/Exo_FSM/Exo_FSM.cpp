@@ -13,7 +13,7 @@ int main()
 {
 	Credits();
 	//
-	FSM_Agent agent;
+	FSM_Agent agent("Michel");
 	while (true)
 	{
 		agent.Update();

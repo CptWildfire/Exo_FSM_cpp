@@ -5,7 +5,7 @@
 void FSM_StateMachine::DebugFSM()
 {
 	if (!debug)return;
-	std::cout << currentState->DebugFSM() << std::endl;
+	std::cout << agent->GetName() << " : " << currentState->DebugFSM() << std::endl;
 }
 
 FSM_StateMachine::FSM_StateMachine() {}

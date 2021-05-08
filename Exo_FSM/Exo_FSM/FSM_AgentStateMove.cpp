@@ -31,7 +31,7 @@ void FSM_AgentStateMove::Exit()
 
 std::string FSM_AgentStateMove::DebugFSM()
 {
-	return std::string("Agent - Move");
+	return std::string("Move");
 }
 
 bool FSM_AgentStateMove::CanExit()

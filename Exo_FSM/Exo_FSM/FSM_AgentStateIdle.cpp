@@ -31,7 +31,7 @@ bool FSM_AgentStateIdle::CanExit()
 
 std::string FSM_AgentStateIdle::DebugFSM()
 {
-	return std::string("Agent - Idle");
+	return std::string("Idle");
 }
 
 void FSM_AgentStateIdle::Init()
