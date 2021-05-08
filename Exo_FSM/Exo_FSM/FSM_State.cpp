@@ -41,8 +41,7 @@ void FSM_State::Run()
 
 void FSM_State::Exit()
 {
-	if(!fsm)
-		return;
+	if(!fsm)return;
 	fsm->SwitchNextSate(validTrans->GetNextState());
 }
 
