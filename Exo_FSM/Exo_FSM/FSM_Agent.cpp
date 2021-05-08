@@ -17,12 +17,20 @@ FSM_Agent::FSM_Agent(std::string _name) : FSM_Agent()
 
 void FSM_Agent::Update()
 {
-	fsm->Run();
+	while (true)
+	{
+		fsm->Run();
+	}
 }
 
 std::string FSM_Agent::GetName()
 {
 	return name;
+}
+
+void FSM_Agent::Run()
+{
+	Update();
 }
 
 FSM_Agent::~FSM_Agent()
